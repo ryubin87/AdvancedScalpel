@@ -1,2 +1,32 @@
 # AdvancedScalpel
 AdvancedScalpel with Free Block Extraction
+
+## Free Block Extraction in Ext4 Filesystem
+
+### (Offline) Free Block Extraction
+**- How to bulid**
+```bash
+sudo apt update
+```
+```bash
+sudo apt install e2fslibs-dev comerr-dev
+```
+```bash
+gcc -Wall -g -o extraction_offline extraction_offline.c -lext2fs -lcom_err
+```
+
+**- How to use**
+  - If measuring the extraction time
+    - sudo time ./extraction_offline <Before.img> <After.img>
+  - If not
+    - sudo ./extraction_offline <Before.img> <After.img>
+
+### (Live) Free Block Extraction
+**- How to bulid**
+  - make -> insmod ext4_freeblock_module.ko
+
+**- How to use**
+  - If measuring the extraction time
+    - sudo time ./extraction_offline <Before.img> <After.img>
+  - If not
+    - sudo ./extraction_offline <Before.img> <After.img>
