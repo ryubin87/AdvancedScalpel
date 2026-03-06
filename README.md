@@ -4,6 +4,9 @@ AdvancedScalpel with Free Block Extraction
 ## Free Block Extraction in Ext4 Filesystem
 
 ### (Offline) Free Block Extraction
+* ./free_block_extraction/offline
+
+
 **- How to bulid**
 ```bash
 sudo apt update
@@ -26,6 +29,9 @@ sudo ./extraction_offline <Before.img> <After.img>
 ```
 
 ### (Live) Free Block Extraction
+* ./free_block_extraction/live
+
+  
 **- How to bulid**
 ```bash
 make -> insmod ext4_freeblock_module.ko
