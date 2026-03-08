@@ -1,6 +1,7 @@
 # AdvancedScalpel
 AdvancedScalpel with Free Block Extraction
 
+
 ## 1️⃣ Free Block Extraction in Ext4 Filesystem
 ✔️ Stage 1: Free Block-Focused Scope Reduction
 
@@ -21,11 +22,11 @@ gcc -Wall -g -o extraction_offline extraction_offline.c -lext2fs -lcom_err
 #### How to use
 - If measuring the extraction time
 ```bash
-sudo time ./extraction_offline <Before.img> <After.img>
+sudo time ./extraction_offline [Before.img] [After.img]
 ```
 - If not
 ```bash
-sudo ./extraction_offline <Before.img> <After.img>
+sudo ./extraction_offline [Before.img] [After.img]
 ```
 
 
@@ -43,7 +44,7 @@ make -> insmod ext4_freeblock_module.ko
 
 #### How to use
 ```bash
-...
+freeblock_user [Directory mounted on the Ext4 file system]
 ```
 
 
@@ -71,6 +72,6 @@ make bsd
 
 #### How to use
 ```bash
-./scalpel -o <output_dir> <input_img>
+./scalpel -o [output_dir] [input_img]
 ```
 - For more detailed usage instructions, please refer to the README.md file included separately in the advancedscalpel folder.
