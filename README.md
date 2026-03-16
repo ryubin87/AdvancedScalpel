@@ -75,3 +75,8 @@ make bsd
 ./scalpel -o [output_dir] [input_img]
 ```
 - For more detailed usage instructions, please refer to the README.md file included separately in the advancedscalpel folder.
+  
+- If you want to check for invalid or partial files, run the command below
+  ```bash
+  ./scalpel -o [output_dir] -save [input_img]
+  ```
